@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, usehi } from "react-router-dom";
 import StarRatingComponent from "react-star-rating-component";
 
 const MovieCard = ({ movie }) => {
@@ -7,8 +7,6 @@ const MovieCard = ({ movie }) => {
     <div>
       <Link to={`/MovieDesc/${movie.id}`}>
         <h5>{movie.movieName}</h5>
-      </Link>
-      <Link to={`/MovieDesc/${movie.id}`}>
         <img src={movie.movieImg} />
       </Link>
       <StarRatingComponent
